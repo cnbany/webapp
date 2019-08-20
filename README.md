@@ -148,7 +148,17 @@ npm run dev 开启测试服，但和一般的 vue 测试不同的是，你需要
 
 > 欢迎扩展和完善此框架，接下去我会放出更多其他更好用的开发框架
 
----
+# 支持VUE语法插件
+apicloud-studio 支持vue语法。
+> language-vue: 
+这个是首推，因为它就是为vue而生的呀，支持很多vue里的提示。
+在空的vue页面敲tem，vue模板的提示就自动出来了，太爽了。
+还有一个language-vue-componet，没有安装，因为它与language-vue会有点冲突，导致template里的html显示没有颜色区分
 
-_Copyright by [Grape Studio](https://github.com/grapewheel?tab=repositories)_  
-_QQ 群 492968709_
+```bash
+cd C:/Users/administrator/.apicloud/packages
+git clone https://github.com/hedefalk/atom-vue
+cd atom-vue
+npm install
+```
+reboot apicloud studio OK!
