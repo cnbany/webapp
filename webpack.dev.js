@@ -51,7 +51,7 @@ module.exports = merge(base, {
     plugins: [
         new HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
-            { from: './src/templates/vue.js', to: './js' }
+            { from: './src/templates/vue.js', to: './script' }
         ]),
         ...htmlWebpacks
     ]

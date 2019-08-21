@@ -39,7 +39,7 @@ module.exports = merge(base, {
     plugins: [
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
-            { from: './src/templates/vue.min.js', to: './js' }
+            { from: './src/templates/vue.min.js', to: './script' }
         ]),
         ...htmlWebpacks
     ]
