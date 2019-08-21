@@ -2,6 +2,8 @@
 	<div>
 		<Button size="large" @click="load">异步读取</Button>
 		<div>{{suggests}}</div>
+		<img src="../image/demo.jpg" />
+		<img src="../image/icon.png" />
 	</div>
 </template>
 <script>

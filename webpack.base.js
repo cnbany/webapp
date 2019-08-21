@@ -22,15 +22,19 @@ module.exports = {
             ]
         }, {
             test: /\.(png|svg|jpg|jpeg|gif)$/,
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-                name: './image/[name].[hash:7].[ext]'
+                limit: 8129, //小于limit限制的图片将转为base64嵌入引用位置
+                fallback: 'file-loader', //大于limit限制的将转交给指定的loader处理
+                outputPath: './image/',
+                name: '[name].[hash:7].[ext]'
             }
         }, {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
             loader: 'file-loader',
             options: {
-                name: './fonts/[name].[hash:7].[ext]'
+                outputPath: './fonts/',
+                name: '[name].[hash:7].[ext]'
             }
         }, { // 命中 JavaScript 文件
             test: /\.js$/,
@@ -53,6 +57,7 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin(),
+
         new CopyWebpackPlugin([
             // './src/templates/api.js',
             {

@@ -59,6 +59,9 @@
     "@babel/runtime": "^7.4.2",
     "@babel/runtime-corejs3": "^7.5.5",
     "core-js": "3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "url-loader": "^2.1.0",
     "vant": "^1.6.24",
     "vue": "^2.6.10"
   }
