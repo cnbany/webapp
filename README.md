@@ -162,3 +162,21 @@ cd atom-vue
 npm install
 ```
 reboot apicloud studio OK!
+
+# VSCODE配置
+vs code for vue apicloud
+
+> 设置SSH key
+>> http://github.com  右上角个人图标---Settings---SSH and GPG keys（左边栏）--- New SSH key . 
+
+>>> title随便取.
+>>> 密码设置如下:
+在Git Bash中依次运行下列代码
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "user@mail.com"
+```
+三次回车
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+输出内容填入 
