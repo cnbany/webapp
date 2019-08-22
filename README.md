@@ -173,6 +173,9 @@ vs code for vue apicloud
 >>> 密码设置如下:
 在Git Bash中依次运行下列代码
 ```bash
+$ git config --global user.name "ASxx"
+$ git config --global user.email "123456789@qq.com"   
+$ git config --global credential.helper store   
 $ ssh-keygen -t rsa -b 4096 -C "user@mail.com"
 ```
 三次回车
@@ -180,3 +183,5 @@ $ ssh-keygen -t rsa -b 4096 -C "user@mail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 输出内容填入 
+
+
